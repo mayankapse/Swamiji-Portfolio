@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio Website</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="#" class="logo">Swami Brahmachaitanya</a>
+      <nav>
+        <a href="#about" class="active">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#sessions">Knowledge Sessions</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section id="about" class="about">
+      <div class="about-img">
+        <img src="home.jpg" alt="" />
+      </div>
+      <div class="about-content">
+        <h1>Jai Gurudev!<span></span></h1>
+        <h3 class="typing-text">I am <span></span></h3>
+        <p>
+          Swami Brahmachaitanya Ji has been associated with the Art of Living
+          since 2009, taking the vow of Brahmacharya in 2012 under the guidance
+          of Gurudev Sri Sri Ravi Shankar Ji. He has been teaching various Art
+          of Living programs like Happiness Program, Sahaj Samadhi Meditation,
+          DSN, YES!+, etc. He has conducted several programs in India and
+          abroad. He has been instrumental in conducting several programs for
+          the Indian Army, Indian Navy, and Indian Air Force. He has been a part
+          of the team that conducted the first-ever Happiness Program in the
+          Indian Parliament. He has been a part of the team that conducted the
+          first-ever Happiness Program in the Indian Parliament. He has been a
+          part of the team that conducted the first-ever Happiness Program in
+          the Indian Parliament.
+        </p>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <a href="#" class="btn">Contact Me</a>
+      </div>
+    </section>
+    <hr />
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+      <h2>Our Courses</h2>
+      <div class="slider-container">
+        <div class="slider">
+          <img src="Images/Image1.jpeg" alt="Image 1" class="slide" />
+          <img src="Images/Image2.jpeg" alt="Image 2" class="slide" />
+          <img src="Images/Image3.jpeg" alt="Image 3" class="slide" />
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+      </div>
+    </section>
+    <hr />
+
+    <!-- Knowledge Sessions Section -->
+    <section id="sessions" class="sessions">
+      <h2>Knowledge Sessions</h2>
+      <div class="session-list">
+        <div class="session-item">
+          <h3>Session 1: Ancient Wisdom for Modern Life</h3>
+          <p>
+            Discover how ancient teachings can help us navigate modern
+            challenges.
+          </p>
+        </div>
+        <div class="session-item">
+          <h3>Session 2: The Power of Silence</h3>
+          <p>
+            Learn the power of silence and meditation in enhancing mental
+            clarity.
+          </p>
+        </div>
+      </div>
+    </section>
+    <hr />
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div>
+        <h2>Contact Me</h2>
+        <p>
+          If you have any questions or would like to connect, please feel free
+          to reach out using the form below:
+        </p>
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Include JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
