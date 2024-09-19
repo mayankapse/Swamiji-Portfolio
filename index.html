@@ -9,7 +9,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Portfolio Website</title>
-  </head>
+</head>
 
   <body>
     <header>
@@ -30,83 +30,134 @@
         <h1>Jai Gurudev!<span></span></h1>
         <h3 class="typing-text">I am <span></span></h3>
         <p>
-          Swami Brahmachaitanya Ji has been associated with the Art of Living
-          since 2009, taking the vow of Brahmacharya in 2012 under the guidance
-          of Gurudev Sri Sri Ravi Shankar Ji. He has been teaching various Art
-          of Living programs like Happiness Program, Sahaj Samadhi Meditation,
-          DSN, YES!+, etc. He has conducted several programs in India and
-          abroad. He has been instrumental in conducting several programs for
-          the Indian Army, Indian Navy, and Indian Air Force. He has been a part
-          of the team that conducted the first-ever Happiness Program in the
-          Indian Parliament. He has been a part of the team that conducted the
-          first-ever Happiness Program in the Indian Parliament. He has been a
-          part of the team that conducted the first-ever Happiness Program in
-          the Indian Parliament.
-        </p>
+          I have been associated with The Art of Living since 2009, taking the vow of Brahmacharya in 2012 under the guidance of Gurudev Sri Sri Ravi Shankar Ji.
+          I have played a pivotal role with the VDS (Vaidic Dharma Sanathan), its various activities and also for the many sister organizations and initiatives along with 
+          the Art of Living. I have been teaching various Art of Living programs like Happiness Program, Sahaj Samadhi Meditation, DSN, YES!+, etc. I have conducted several 
+          programs in India and abroad. I have been instrumental in conducting several programs for the Indian Army, Indian Navy, and Indian Air Force. I have been a part
+          of the team that conducted the first-ever Happiness Program in the Indian Parliament.
         <div class="social-icons">
-          <a href="#"><i class="fa-brands fa-youtube"></i></a>
-          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@Brahmachaitanyaji" target="_blank">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a href="https://x.com/Brahmchaitanya" target="_blank">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="https://www.facebook.com/aolpraful/" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/swamibrahmachaitanya/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
         </div>
-        <a href="#" class="btn">Contact Me</a>
+        <a href="mailto:mayankaol13@gmail.com" class="btn">Contact Me</a>
       </div>
     </section>
-    <hr />
 
-    <!-- Courses Section -->
-    <section id="courses" class="courses">
-      <h2>Our Courses</h2>
-      <div class="slider-container">
-        <div class="slider">
-          <img src="Images/Image1.jpeg" alt="Image 1" class="slide" />
-          <img src="Images/Image2.jpeg" alt="Image 2" class="slide" />
-          <img src="Images/Image3.jpeg" alt="Image 3" class="slide" />
-        </div>
-        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-        <button class="next" onclick="moveSlide(1)">&#10095;</button>
-      </div>
-    </section>
-    <hr />
-
+  <!-- Courses Section -->
+<section id="courses" class="courses">
+  <h2>Our Courses</h2>
+  <div class="courses-img">
+    <div class="slider">
+      <img src="home.jpg" alt="Image 1" class="slide" />
+      <img src="home.jpg" alt="Image 2" class="slide" />
+      <img src="home.jpg" alt="Image 3" class="slide" />
+    </div>
+    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+  </div>
+</section>
+ 
     <!-- Knowledge Sessions Section -->
-    <section id="sessions" class="sessions">
+    <<section id="sessions" class="sessions">
       <h2>Knowledge Sessions</h2>
       <div class="session-list">
         <div class="session-item">
-          <h3>Session 1: Ancient Wisdom for Modern Life</h3>
+          <h3>Fulfill your all desires</h3>
+          <p>Discover how reciting 'Shri Gouri Ashtottar ShatNam Stotram' can help us fulfill our desires.</p>
           <p>
-            Discover how ancient teachings can help us navigate modern
-            challenges.
+            <a href="stotra.html" class="show-text-link" onclick="showMoreText(event1)">Know more</a>
           </p>
         </div>
         <div class="session-item">
-          <h3>Session 2: The Power of Silence</h3>
+          <h3>What is Pitra Dosha?</h3>
+          <p>Here is everything You need to know about Pitra Dosh or Pithru Dosham.</p>
           <p>
-            Learn the power of silence and meditation in enhancing mental
-            clarity.
+            <a href="pitra-dosha.html" class="show-text-link" onclick="showMoreText(event2)">Know more</a>
           </p>
         </div>
-      </div>
+        <div class="session-item">
+          <h3>Discovering the Secret Power of Hanuman</h3>
+          <p>What is the inner meaning of Lord Hanuman and his relevance for everyone?</p>
+          <p>
+            <a href="hanuman.html" class="show-text-link" onclick="showMoreText(event3)">Know more</a>
+          </p>
+        </div>
+        <div class="session-item">
+          <h3>Want to destroy all your sins?</h3>
+          <p>Remove all your sins by fasting. 'Budh Ashtami' importance and worship method</p>
+          <p>
+            <a href="stotra.html" class="show-text-link" onclick="showMoreText(event)">Know more</a>
+          </p>
+        </div>
     </section>
-    <hr />
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-      <div>
-        <h2>Contact Me</h2>
-        <p>
-          If you have any questions or would like to connect, please feel free
-          to reach out using the form below:
-        </p>
-        <form class="contact-form">
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <textarea placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
+      <div class="background">
+        <div class="container">
+          <div class="screen">
+            <div class="screen-header">
+              <div class="screen-header-left">
+                <div class="screen-header-button close"></div>
+                <div class="screen-header-button maximize"></div>
+                <div class="screen-header-button minimize"></div>
+              </div>
+              <div class="screen-header-right">
+                <div class="screen-header-ellipsis"></div>
+                <div class="screen-header-ellipsis"></div>
+                <div class="screen-header-ellipsis"></div>
+              </div>
+            </div>
+            <div class="screen-body">
+              <div class="screen-body-item left">
+                <div class="app-title">
+                  <span>CONTACT</span>
+                  <span>US</span>
+                </div>
+                <div class="app-contact">CONTACT INFO : +91 9322895663</div>
+              </div>
+              <div class="screen-body-item">
+                <div class="app-form">
+                  <div class="app-form-group">
+                    <input class="app-form-control" placeholder="NAME" />
+                  </div>
+                  <div class="app-form-group">
+                    <input class="app-form-control" placeholder="EMAIL" />
+                  </div>
+                  <div class="app-form-group">
+                    <input class="app-form-control" placeholder="CONTACT NO" />
+                  </div>
+                  <div class="app-form-group message">
+                    <input class="app-form-control" placeholder="MESSAGE" />
+                  </div>
+                  <div class="app-form-group buttons">
+                    <button class="app-form-button">SEND</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+  </body>
+
+    <footer>
+      <p>&copy; 2024 Swami Brahmachaitanya. All Rights Reserved.</p>
+    </footer>
 
     <!-- Include JavaScript file -->
     <script src="script.js"></script>
